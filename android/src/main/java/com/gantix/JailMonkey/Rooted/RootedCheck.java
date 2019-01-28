@@ -24,7 +24,7 @@ public class RootedCheck {
         } else {
             check = new LessThan23();
         }
-        return check.checkRooted() || rootBeerCheck(context);
+        return check.checkRooted();// || rootBeerCheck(context);
     }
 
     private static boolean rootBeerCheck(Context context) {
