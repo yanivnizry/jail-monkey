@@ -11,9 +11,9 @@ public class DebuggedCheck {
      * @return <code>true</code> if the device is debug mode, <code>false</code> otherwise.
      */
     public static boolean isDebugged(Context context) {
-//         if (Debug.isDebuggerConnected()) {
-//             return true;
-//         }
+        if (Debug.isDebuggerConnected()) {
+            return true;
+        }
 
         return (context.getApplicationContext().getApplicationInfo().flags & ApplicationInfo.FLAG_DEBUGGABLE) != 0;
     }
